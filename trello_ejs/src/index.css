@@ -1,38 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
 .board {
   display: flex;
-  flex-direction: row;
+  gap: 20px;
   padding: 20px;
+  justify-content: center;
 }
 
 .list {
-  margin: 10px;
-  padding: 10px;
+  background-color: white;
+  padding: 15px;
   width: 300px;
-  background-color: #f4f4f4;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #f4f4f4;
   padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+button {
+  background-color: #0079bf;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
-h1, h2, h3, h4, h5 {
-  margin: 0;
-  padding: 0;
+button:hover {
+  background-color: #026aa7;
 }
 
-* {
-  box-sizing: border-box;
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 
-function Task({task}) {
-    return (
-        <li>{task.name}</li>
-    );
+function Task({ task }) {
+  return (
+    <li className="card">
+      {task.name}
+    </li>
+  );
 }
 
 export default Task;

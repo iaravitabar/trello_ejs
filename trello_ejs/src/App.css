@@ -1,42 +1,35 @@
-.board {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px; /* Espaciado entre las listas */
-  padding: 20px;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
 }
 
-/* Las listas en el tablero */
-.list {
+.App {
+  text-align: center;
+}
+
+.board {
   display: flex;
-  flex-direction: column; /* Alinear tarjetas de forma vertical */
-  width: 300px;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.list {
   background-color: white;
   padding: 15px;
+  width: 300px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor de las tarjetas */
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Espaciado entre tarjetas */
-  margin-bottom: 20px; /* Espacio antes del formulario de nueva tarjeta */
-}
-
-/* Tarjetas individuales */
 .card {
   background-color: #f4f4f4;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Formularios de nueva tarjeta y lista */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -50,4 +43,12 @@ button {
 
 button:hover {
   background-color: #026aa7;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
 }
